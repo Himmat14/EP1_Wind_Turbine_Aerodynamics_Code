@@ -1,0 +1,82 @@
+%itteration function
+function [parameters] = axial_induction_factor(TSR,test_data)
+
+    Twist = test_data.twist;
+    Chord = test_data.chord;
+    R = test_data.R;
+    AOA = test_data.aoa_dist;
+    Cl = test_data.Cl_dist;
+    Cd = test_data.Cd_dist;
+    station = test_data.radialstat;
+
+    a = linspace(1/3,1/3,length(R))';
+
+    labmda_r = TSR.*R./R(end);
+    sigma_r = Chord./(pi.*R);
+
+    true1 = 0;
+    true2 = 0;
+    true3 = 0;
+    theta = zeros(length(R),1);
+    alpha = zeros(length(R),1);
+    CL = zeros(length(R),1);
+    CD = zeros(length(R),1);
+   
+
+    %while true1 == 0 && true2 == 0 && true3 == 0
+    for x = 1:1000
+        true1 = 1;
+        true2 = 1;
+        true3 = 1; 
+
+        for i = 1:(station(1)*length(R))
+            theta(i) = atan((1-a(i))/labmda_r(i));
+            alpha(i) = theta(i)-Twist(i);
+            cl_local = interp1(AOA(:,1),Cl(:,1),alpha(i),"linear","extrap");
+            CL(i) = cl_local;
+            CD(i) = interp1(AOA(:,1),Cd(:,1),alpha(i),"linear","extrap");
+            a(i) = (sigma_r(i)*CL(i)/(4*sin(theta(i)*tan(theta(i)))))*(1-a(i));
+            theta2(i) = atan((1-a(i))/labmda_r(i));
+
+            if abs(theta2(i)-theta(i)) > 0.001
+                true1 = 0;
+            end
+        end
+        
+        for i = (station(1)*length(R)):(station(2)*length(R))
+            theta(i) = atan((1-a(i))/labmda_r(i));
+            alpha(i) = theta(i)-Twist(i);
+            cl_local = interp1(AOA(:,2),Cl(:,2),alpha(i),"linear","extrap");
+            CL(i) = cl_local;
+            CD(i) = interp1(AOA(:,2),Cd(:,2),alpha(i),"linear","extrap");
+            a(i) = (sigma_r(i)*CL(i)/(4*sin(theta(i)*tan(theta(i)))))*(1-a(i));
+            theta2(i) = atan((1-a(i))/labmda_r(i));
+
+            if abs(theta2(i)-theta(i)) > 0.001
+                true2 = 0;
+            end
+        end
+
+        for i = (station(2)*length(R)):(station(3)*length(R))
+            theta(i) = atan((1-a(i))/labmda_r(i));
+            alpha(i) = theta(i)-Twist(i);
+            cl_local = interp1(AOA(:,3),Cl(:,3),alpha(i),"linear","extrap");
+            CL(i) = cl_local;
+            CD(i) = interp1(AOA(:,3),Cd(:,3),alpha(i),"linear","extrap");
+            a(i) = (sigma_r(i)*CL(i)/(4*sin(theta(i)*tan(theta(i)))))*(1-a(i));
+            theta2(i) = atan((1-a(i))/labmda_r(i));
+
+            if abs(theta2(i)-theta(i)) > 0.001
+                true3 = 0;
+            end
+        end
+
+    end
+
+    a(isnan(a))=0;
+    a(isnan(a))=0;
+    a_prime = (sigma_r.*CL./(4*labmda_r.*cos(Chord))).*(1-a);
+    parameters = [a,CL,CD];
+
+end
+
