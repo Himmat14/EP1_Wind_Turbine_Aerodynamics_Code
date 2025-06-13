@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>bb6a2ae1-4646-4942-8b7f-c6250f24fcc4</ID>
+  <Version>7</Version>
+  <Name />
+  <Author>user</Author>
+  <Company>420869</Company>
+  <Notes />
+  <Template />
+  <PassNA>false</PassNA>
+  <FailEstimatedRecords>false</FailEstimatedRecords>
+  <ResultType>0</ResultType>
+  <ResultStage>-1</ResultStage>
+  <RankByType>0</RankByType>
+  <RankByStage>-1</RankByStage>
+  <RankByProperty />
+  <IndexRankColumn>0</IndexRankColumn>
+  <RankOrder>1</RankOrder>
+  <Database>
+    <Path>C:\Program Files (x86)\Granta EduPack\2022 R2\Database\English Level 1\data.gdb</Path>
+    <Name>Level 1</Name>
+    <Unit>Metric</Unit>
+    <UnitType>Relative</UnitType>
+    <Currency>GBP</Currency>
+    <SelectionTable>MaterialUniverse</SelectionTable>
+    <Tables>
+      <Table>
+        <TableName>MaterialUniverse</TableName>
+        <SubsetName>All materials</SubsetName>
+        <LayoutName>All properties</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <Favourites />
+        <CompareRecords />
+        <RecordCustomLabels />
+        <Envelopes>
+          <Envelope>
+            <Id>EDU04-52</Id>
+            <Name>Glasses</Name>
+            <Color>4</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>X41353558-58e7-4c1a-b852-55fbd6d4a4b2</Id>
+            <Name>Non-technical ceramics</Name>
+            <Color>9</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>EDU04-232</Id>
+            <Name>Technical ceramics</Name>
+            <Color>3</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>EDU04-4329</Id>
+            <Name>Composites</Name>
+            <Color>6</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>EDU04-7014</Id>
+            <Name>Foams</Name>
+            <Color>1</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>EDU04-7004</Id>
+            <Name>Natural materials</Name>
+            <Color>7</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>EDU04-1590</Id>
+            <Name>Metals and alloys</Name>
+            <Color>0</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>EDU04-4083</Id>
+            <Name>Elastomers</Name>
+            <Color>5</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+          <Envelope>
+            <Id>Xe6316629-83a2-40e1-82d0-201426288240</Id>
+            <Name>Polymers</Name>
+            <Color>2</Color>
+            <IsVisible>true</IsVisible>
+            <IsCustomEnvelope>false</IsCustomEnvelope>
+          </Envelope>
+        </Envelopes>
+        <UserRecords>
+          <Record>
+            <TreeName>My records</TreeName>
+            <Notes />
+            <FullName>My records</FullName>
+            <GRUID>X8a9c4de5-4dd1-4e04-a1c0-222e9380a963</GRUID>
+            <Color>14</Color>
+            <IsVirtual>false</IsVirtual>
+            <Properties />
+            <ChildRecords>
+              <Record>
+                <TreeName>CFRP</TreeName>
+                <Notes />
+                <FullName>CFRP</FullName>
+                <GRUID>X51a0f840-904d-439d-bcd5-bae71cac43d1</GRUID>
+                <Color>16</Color>
+                <IsVirtual>false</IsVirtual>
+                <Properties />
+                <ChildRecords />
+              </Record>
+            </ChildRecords>
+          </Record>
+        </UserRecords>
+      </Table>
+      <Table>
+        <TableName>ProcessUniverse</TableName>
+        <SubsetName>All Processes</SubsetName>
+        <LayoutName>All Processes</LayoutName>
+        <CompareTable>
+          <Windowplacement />
+          <ZOrder>-1</ZOrder>
+          <ShowProjectData>false</ShowProjectData>
+          <ShowRanges>true</ShowRanges>
+          <ShowValues>true</ShowValues>
+          <PercentError>10</PercentError>
+        </CompareTable>
+        <UserDefinedNearnessSettings />
+        <Favourites />
+        <CompareRecords />
+        <RecordCustomLabels />
+        <Envelopes />
+        <UserRecords />
+      </Table>
+    </Tables>
+    <ParameterValues />
+  </Database>
+  <Stages>
+    <Stage xsi:type="BubbleStageMemento">
+      <Name />
+      <Notes />
+      <Windowplacement>0,1,-1,-1,-1,-1,0,80,1920,868</Windowplacement>
+      <ZOrder>6</ZOrder>
+      <SelectWholeRecords>false</SelectWholeRecords>
+      <Enabled>true</Enabled>
+      <PassNA>false</PassNA>
+      <HideFailedRecords>false</HideFailedRecords>
+      <ResultIntersection>true</ResultIntersection>
+      <ShowFavourites>false</ShowFavourites>
+      <ShowVirtualRecords>false</ShowVirtualRecords>
+      <ShowUserRecords>false</ShowUserRecords>
+      <ShowReferenceMaterial>false</ShowReferenceMaterial>
+      <FailEstimates>false</FailEstimates>
+      <xAxis>
+        <Name>Density (kg/m^3)</Name>
+        <FunctionObjective />
+        <Expression>[Density]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>3.8670842437148423</Low>
+        <High>80267.193688498548</High>
+      </xAxis>
+      <yAxis>
+        <Name>Young's modulus (GPa)</Name>
+        <FunctionObjective />
+        <Expression>[Young's modulus]</Expression>
+        <ExpressionType>1</ExpressionType>
+        <AbsoluteValues>true</AbsoluteValues>
+        <LogAxis>true</LogAxis>
+        <Low>5.6901871683932171E-05</Low>
+        <High>2943.6642943174329</High>
+      </yAxis>
+      <Selections />
+      <Labels>
+        <Label xsi:type="BubbleLabel">
+          <Text>CFRP, epoxy matrix (isotropic)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Arial</FaceName>
+          <PointSize>100</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>412.705832785979</XPos>
+          <YPos>507.16525726674695</YPos>
+          <RecordGruid>EDU04-13171</RecordGruid>
+        </Label>
+        <Label xsi:type="BubbleLabel">
+          <Text>GFRP, epoxy matrix (isotropic)</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Arial</FaceName>
+          <PointSize>100</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>7984.6684589217748</XPos>
+          <YPos>0.011997052767551619</YPos>
+          <RecordGruid>EDU04-13172</RecordGruid>
+        </Label>
+        <Label xsi:type="BubbleLabel">
+          <Text>Aluminum alloys</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Arial</FaceName>
+          <PointSize>100</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>8808.6053220899885</XPos>
+          <YPos>1.7794050924912317</YPos>
+          <RecordGruid>EDU04-1629</RecordGruid>
+        </Label>
+        <Label xsi:type="BubbleLabel">
+          <Text>Bamboo</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Arial</FaceName>
+          <PointSize>100</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>222.78796708822017</XPos>
+          <YPos>101.59539765723277</YPos>
+          <RecordGruid>EDU04-3540</RecordGruid>
+        </Label>
+        <Label xsi:type="BubbleLabel">
+          <Text>Wood, typical along grain</Text>
+          <TextColor>#FF000000</TextColor>
+          <Border>false</Border>
+          <BorderColor>#FF000000</BorderColor>
+          <Fill>true</Fill>
+          <FillColor>#FFffffff</FillColor>
+          <RoundedCorners>false</RoundedCorners>
+          <FaceName>Arial</FaceName>
+          <PointSize>100</PointSize>
+          <Italic>false</Italic>
+          <Weight>400</Weight>
+          <XPos>72.013463815488578</XPos>
+          <YPos>13.615378183094249</YPos>
+          <RecordGruid>EDU05-6138</RecordGruid>
+        </Label>
+      </Labels>
+      <Curves />
+      <ShowEnvelopes>false</ShowEnvelopes>
+      <OnTop>
+        <Record>X51a0f840-904d-439d-bcd5-bae71cac43d1</Record>
+      </OnTop>
+    </Stage>
+  </Stages>
+</Project>
